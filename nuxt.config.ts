@@ -8,4 +8,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+      baseURL: "/anime-komic/",
+      buildAssetsDir: "assets",
+    },
+  
+    nitro: {
+      preset: "static",
+      prerender: {
+        ignore: ['/about',],
+      },
+    },
 })
